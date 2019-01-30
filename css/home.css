@@ -1,8 +1,17 @@
+@font-face{
+    font-family:Barlow;
+    src: url('../fonts/BarlowCondensed-Thin.ttf');
+}
+html body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 .dots{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
+    height: 90vh;
 }
 .dot{
     width: 3em;
@@ -17,9 +26,37 @@
     font-size: 1em;
     font-family: sans-serif;
     box-shadow: 0.2em 0.2em 0 #eee;
+    transition: 0.8s;
 }
 .small{
     width: 0.8em;
     height: 0.8em;
     margin: 0.3em;
+}
+.dot:hover{
+    background: #58d4a9;
+}
+.small:hover{
+    background: #d64b21;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+    font-family: Barlow, sans-serif;
+}
+.contact a{
+    padding: 0.2em 1em;
+    border-radius: 1em;
+    color: #aaa;
+    border: dashed 1px #ddd;
+    text-decoration: none;
+    transition: 0.5s
+}
+.contact a:hover{
+    background-color: black;
+    color: white;
 }
